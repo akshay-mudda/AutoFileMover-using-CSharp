@@ -1,0 +1,15 @@
+CREATE DATABASE YourDBName;
+GO
+
+USE YourDBName;
+GO
+
+CREATE TABLE FileMoveHistory (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FileName NVARCHAR(255) NOT NULL,
+    FileType NVARCHAR(50) NOT NULL,
+    CreateDate DATETIME NOT NULL,
+    SourcePath NVARCHAR(255) NOT NULL,
+    DestinationPath NVARCHAR(255) NOT NULL
+);
+GO
